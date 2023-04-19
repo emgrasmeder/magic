@@ -6,9 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Program.fs" />
-    <Compile Include="SomeGame.fs" />
     <Content Include="README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="src\Program.fs" />
+    <Compile Include="src\SomeGame.fs" />
   </ItemGroup>
 
 </Project>
