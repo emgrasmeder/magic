@@ -1,5 +1,6 @@
 ﻿module magic.Magic.SomeGame
 
+open System
 open Magic
 
 let debugLocation (p: Phenomenon) =
@@ -9,11 +10,17 @@ let debugLocation (p: Phenomenon) =
 let something =
     { Coordinates = { X = 0; Y = 0 }
       Id = 0 }
-
+ 
 let force =
     { ForceAppliedX = 10
       ForceAppliedY = 10 }
 
-debugLocation something
-let somethingChanged = translate something force
-debugLocation somethingChanged
+// debugLocation something
+// let somethingChanged = translate something force
+// debugLocation somethingChanged
+
+// gameLoop DateTime.Now
+printfn "at least i work"
+gameLoop |> ignore
+
+//check out this one: https://fsharpforfunandprofit.com/posts/concurrency-reactive/
